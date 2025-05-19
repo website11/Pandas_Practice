@@ -17,3 +17,13 @@ last_avg = test_scores.iloc[6:].mean()
 
 # Student Improvement
 improvement = last_avg - first_avg
+
+# Student highest score month
+highest_score_month = test_scores.idxmax()
+
+# Student five highest scores
+highest_scores = test_scores.nlargest(5)
+
+# Student scores rounded
+rounded_scores = test_scores.round(decimals=-1)
+print(rounded_scores)
